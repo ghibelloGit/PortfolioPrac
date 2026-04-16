@@ -1,0 +1,332 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ghibello Raquel - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-smooth-scroll="true">
+
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">G.V.R</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="about" class="hero-section about">
+        <div class="container section-title">
+            <h1 class="display-3 fw-bold text-dark" id="typewriter-text"></h1>
+            <p class="lead text-secondary">Software Developer & Tech Enthusiast</p>
+        </div>
+
+        <slot type="section-title"></slot>
+        <div class="container">
+            <div class="row gy-5 d-flex">
+                <div class="col-lg-4">
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <div class="profile-avatar">
+                                <img src="ghibello.png" class="img-fluid" alt="">
+                                <div class="status-indicator"></div>
+                            </div>
+                            <h4 class="text-primary">Ghibello Raquel</h4>
+                            <span class="role">Aspiring Web/Software Developer</span>
+                            <div class="rating">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+
+
+                                <span>3.5</span>
+                            </div>
+                        </div>
+
+                        <div class="profile-stats">
+                            <div class="stat-item text-primary">
+                                <h4>3</h4>
+                                <p>Projects</p>
+                            </div>
+                            <div class="stat-item text-primary">
+                                <h4>1+</h4>
+                                <p>Years</p>
+                            </div>
+                            <div class="stat-item text-primary">
+                                <h4>3</h4>
+                                <p>Awards</p>
+                            </div>
+                        </div>
+
+                        <div class="profile-actions">
+                            <button href="#" id="downloadbtn" class="btn-primary"><i class="bi bi-download"></i> Download CV</button>
+                            <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#contactmdl">Contact me!</button>
+                        </div>
+
+                        <div class="social-connect">
+                            <a href="https://facebook.com/raquelghibello" data-bs-toggle="tootltip" data-bs-placement="top" title="https://facebook.com/raquelghibello"><i class="bi bi-facebook"></i></a>
+                            <a href="https://github.com/ghibelloGit" data-bs-toggle="tootltip" data-bs-placement="top" title="https://github.com/ghibelloGit"><i class="bi bi-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="content-wrapper">
+                        <div class="bio-section">
+                            <div class="section-tag">About Me</div>
+                            <h2>Transforming Ideas into Digital Reality</h2>
+                            <p>
+                                I am a 4th year Computer Science student who aspires to become a web/software developer. I have actively participated in our
+                                university’s CSS Olympics, a competitive event showcasing technical skills across computer
+                                science disciplines, where I earned 1st place in the Java Programming Competition. These
+                                experiences strengthened my problem-solving skills, adaptability, and ability to perform under
+                                pressure.
+                            </p>
+                        </div>
+
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <i class="bi bi-briefcase text-primary"></i>
+                                <div class="detail-content">
+                                    <span>Experience</span>
+                                    <strong>1+ Years</strong>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <i class="bi bi-mortarboard text-primary"></i>
+                                <div class="detail-content">
+                                    <span>Degree</span>
+                                    <strong>BS Computer Science</strong>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <i class="bi bi-geo-alt text-primary"></i>
+                                <div class="detail-content">
+                                    <span>Based In</span>
+                                    <strong>Santa Rosa, Laguna</strong>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <i class="bi bi-envelope text-primary"></i>
+                                <div class="detail-content">
+                                    <span>Email</span>
+                                    <strong>ghibs.raquel@gmail.com</strong>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <i class="bi bi-phone text-primary"></i>
+                                <div class="detail-content">
+                                    <span>Phone</span>
+                                    <strong>+(63)-997-258-0093</strong>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <i class="bi bi-calendar-check text-primary"></i>
+                                <div class="detail-content">
+                                    <span>Availability</span>
+                                    <strong>Open to Work</strong>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-showcase">
+                            <div class="section-tag">Core Skills</div>
+                            <h3>Programming Proficiency</h3>
+
+                            <div class="skills-list skills-animation">
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Mysql</span>
+                                        <span class="skill-percent">85%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Java &amp; C language</span>
+                                        <span class="skill-percent">80%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Python &amp; HTML</span>
+                                        <span class="skill-percent">50%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">React &amp; Django Restframework</span>
+                                        <span class="skill-percent">45%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Javascript &amp; CSS</span>
+                                        <span class="skill-percent">40%</span>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section id="projects" class="proj py-5">
+        <div class="container reveal">
+            <h2 class="fw-bold mb-4 border-bottom pb-2">Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card project-card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <img src="pricepective.png" class="img-fluid" />
+                            <h4 class="card-title text-primary">Pricepective</h4>
+                            <p class="card-text text-muted">A data-driven web application focused on demand prediction and price optimization.</p>
+                            <a href="https://lagaymolinkngpdf.com" data-bs-toggle="tootltip" data-bs-placement="top" title="https://lagaymolinkngpdf.com"><i class="bi bi-filetype-pdf"></i> see project info</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card project-card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <img src="pos.png" class="img-fluid" />
+                            <h4 class="card-title text-primary">POS System</h4>
+                            <p class="card-text text-muted">A point-of-sale system built to streamline transactions and manage inventory efficiently.</p>
+                            <a href="https://lagaymolinkngpdf.com" data-bs-toggle="tootltip" data-bs-placement="top" title="https://lagaymolinkngpdf.com"><i class="bi bi-filetype-pdf"></i> see project info</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container reveal">
+            <h2 class="fw-bold mb-4 border-bottom pb-2">Technical Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h5 class="text-secondary">Web Technologies</h5>
+                    <span class="badge skill-badge bg-primary">HTML (Advanced)</span>
+                    <span class="badge skill-badge bg-info text-dark">CSS (Intermediate)</span>
+
+                    <h5 class="text-secondary mt-4">Programming Languages</h5>
+                    <span class="badge skill-badge bg-success">Java (Advanced)</span>
+                    <span class="badge skill-badge bg-info text-dark">C (Intermediate)</span>
+                    <span class="badge skill-badge bg-info text-dark">Python (Intermediate)</span>
+                    <span class="badge skill-badge bg-info text-dark">JavaScript (Intermediate)</span>
+
+                    <h5 class="text-secondary mt-4">Databases</h5>
+                    <span class="badge skill-badge bg-info text-dark">MySQL (Intermediate)</span>
+                </div>
+                <div class="col-md-6">
+                    <h5 class="text-secondary">Embedded Systems & Electronics</h5>
+                    <span class="badge skill-badge bg-info text-dark">Arduino (Intermediate)</span>
+                    <span class="badge skill-badge bg-secondary">Circuit Prototyping</span>
+                    <span class="badge skill-badge bg-secondary">Sensors & Motor Drivers</span>
+
+                    <h5 class="text-secondary mt-4">Development Tools</h5>
+                    <span class="badge skill-badge bg-dark">Visual Studio Code</span>
+                    <span class="badge skill-badge bg-dark">Git</span>
+                    <span class="badge skill-badge bg-dark">Dev-C++</span>
+                    <span class="badge skill-badge bg-dark">Netbeans</span>
+                    <span class="badge skill-badge bg-dark">Arduino IDE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-dark text-white py-5">
+        <div class="container reveal">
+            <div class="row">
+
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-3 text-primary">Education & Location</h5>
+                    <p class="mb-1"><strong>Location:</strong> Sta. Rosa, Laguna, Philippines</p>
+                    <p class="mb-0"><strong>Education:</strong> Our Lady of Fatima University - Laguna Campus (Expected 2026)</p>
+                </div>
+            </div>
+            <hr class="mt-4 mb-3 border-secondary">
+            <div class="text-center text-secondary small">
+                &copy; 2026 Ghibello Raquel. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal fade" id="contactmdl" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Send me a message!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="senderName" class="form-label">Your Name</label>
+                            <input type="text" class="form-control" id="senderName" placeholder="John Doe" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="senderEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="senderEmail" placeholder="name@example.com" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="messageBody" class="form-label">Message</label>
+                            <textarea class="form-control" id="messageBody" rows="4" placeholder="Hi Ghibello, I'd like to work with you..." required></textarea>
+                        </div>
+                        <div class="d-flex justify-content-end gap-2">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
