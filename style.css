@@ -1,4 +1,4 @@
-﻿:root {
+:root {
     --primary: #1B2021;
     --secondary: #a3b7ca;
     --shadows: #194a7a;
@@ -81,10 +81,17 @@ body {
     z-index: 1;
 }
 
+
 .section-title {
     text-align: center;
     padding-top: 60px;
     position: relative;
+    background-image: url('homebg.png');
+    height: 100vh;
+    width:100vw;
+    object-fit: fill;
+    justify-content: center;
+    align-content: center;
 }
 
 .about .profile-card {
@@ -267,8 +274,15 @@ Specificity: (0,3,0) {
     margin-bottom: 50px;
 }
 
-    .about .content-wrapper .details-grid .detail-item {
-        display: flex;
+.about .content-wrapper .detail {
+    gap: 24px;
+    margin-bottom: 50px;
+}
+.about .content-wrapper .detail .item{
+    justify-content: space-between;
+    align-content: space-between;
+}
+    .about .content-wrapper .detail .item .detail-content{
         align-items: center;
         gap: 16px;
         padding: 24px;
@@ -276,58 +290,67 @@ Specificity: (0,3,0) {
         border-radius: 16px;
         border: 1px solid color-mix(in srgb, var(--secondary), transparent 92%);
         transition: all 0.3s ease;
+        height: 15vh;
+        justify-content:center;
+        align-content: center;
     }
+        .about .content-wrapper .detail .item .detail-content strong {
+            color: white;
+        }
+        .about .content-wrapper .detail .item .detail-content span {
+            color: lightgray;
+        }
 
-        .about .content-wrapper .details-grid .detail-item span, strong {
+        .about .content-wrapper .detail .item .detail-content strong {
             color: var(--lights);
             transition: color 0.3s ease;
         }
 
-        .about .content-wrapper .details-grid .detail-item:hover {
-            color: hsl(218, 60%, 46%);
-            font-size: 18px;
+            .about .content-wrapper .detail .item .detail-content:hover {
+                color: hsl(218, 60%, 46%);
+                font-size: 18px;
+            }
+
+        .about .content-wrapper .skills-showcase .section-tag {
+            display: inline-block;
+            padding: 6px 16px;
+            background: color-mix(in srgb, var(--secondary), transparent 90%);
+            color: var(--accent-color);
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 16px;
         }
 
-.about .content-wrapper .skills-showcase .section-tag {
-    display: inline-block;
-    padding: 6px 16px;
-    background: color-mix(in srgb, var(--secondary), transparent 90%);
-    color: var(--accent-color);
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 16px;
-}
+        .about .content-wrapper .skills-showcase h3 {
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--shadows);
+            margin-bottom: 32px;
+        }
 
-.about .content-wrapper .skills-showcase h3 {
-    font-size: 28px;
-    font-weight: 700;
-    color: var(--shadows);
-    margin-bottom: 32px;
-}
+        .about .content-wrapper .skills-showcase .skills-list .skill-item {
+            margin-bottom: 28px;
+        }
 
-.about .content-wrapper .skills-showcase .skills-list .skill-item {
-    margin-bottom: 28px;
-}
+        .about .content-wrapper .bio-section p {
+            color: var(--primary);
+        }
 
-.about .content-wrapper .bio-section p {
-    color: var(--primary);
-}
-
-@media (min-width: 992px) {
-    .col-lg-8 {
-        flex: 0 0 auto;
-        width: 66.66666667%;
-    }
-}
+        @media (min-width: 992px) {
+            .col-lg-8 {
+                flex: 0 0 auto;
+                width: 66.66666667%;
+            }
+        }
 
 
-.modal-content {
-    background: #1b2021e6;
-}
+        .modal-content {
+            background: #1b2021e6;
+        }
 
-    .modal-content label {
-        color: var(--secondary);
-    }
+            .modal-content label {
+                color: var(--secondary);
+            }
