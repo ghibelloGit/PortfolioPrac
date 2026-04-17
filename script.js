@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     // 1. Typing Effect for Name Header
-    const text = " I am Ghibello Raquel.";
+    const text = " I am Ghibello Raquel";
     const typingElement = document.getElementById("typewriter-text");
     let index = 0;
 
@@ -37,6 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     reveal();
 });
+
+
+
 
 document.addEventListener("click", function (event) {
     // Check if element clicked is a btn
