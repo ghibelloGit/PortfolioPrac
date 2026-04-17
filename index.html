@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -21,22 +21,31 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#home">
+                        <i class="bi bi-house"></i>
+                        Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">
+                        <i class="bi bi-file-person"></i>
+                        About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">
+                        <i class="bi bi-bookmark-heart"></i>
+                        Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">
+                        <i class="bi bi-person-lines-fill"></i>
+                        Skills</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div id="about" class="hero-section about">
-        <div class="container section-title">
-            <h1 class="display-3 fw-bold text-dark" id="typewriter-text"></h1>
+    <div class="hero-section about">
+        <div id="home" class="container-fluid w-100 section-title">
+            <h1 class="display-3 fw-bold text-primary" id="typewriter-text"></h1>
             <p class="lead text-secondary">Software Developer & Tech Enthusiast</p>
         </div>
 
         <slot type="section-title"></slot>
-        <div class="container">
+        <div id="about" class="container mt-5">
             <div class="row gy-5 d-flex">
                 <div class="col-lg-4">
                     <div class="profile-card">
@@ -86,7 +95,7 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="content-wrapper">
-                        <div class="bio-section">
+                        <div class="bio-section mt-4">
                             <div class="section-tag">About Me</div>
                             <h2>Transforming Ideas into Digital Reality</h2>
                             <p>
@@ -98,55 +107,50 @@
                             </p>
                         </div>
 
-                        <div class="details-grid">
-                            <div class="detail-item">
-                                <i class="bi bi-briefcase text-primary"></i>
-                                <div class="detail-content">
-                                    <span>Experience</span>
-                                    <strong>1+ Years</strong>
-                                </div>
-                            </div>
+                        <div class="container-fluid detail justify-content-center">
+                            <div class="row">
+                                <div class="col-lg-6 item">
+                                    <div class="detail-content mb-3">
+                                        <i class="bi bi-briefcase text-primary"></i>
+                                        <span>Experience</span>
+                                        <strong  >1+ Years</strong>
+                                    </div>
 
-                            <div class="detail-item">
-                                <i class="bi bi-mortarboard text-primary"></i>
-                                <div class="detail-content">
-                                    <span>Degree</span>
-                                    <strong>BS Computer Science</strong>
-                                </div>
-                            </div>
+                                    <div class="detail-content mb-3">
+                                        <i class="bi bi-mortarboard text-primary"></i>
+                                        <span>Degree</span>
+                                        <strong  >BS Computer Science</strong>
+                                    </div>
 
-                            <div class="detail-item">
-                                <i class="bi bi-geo-alt text-primary"></i>
-                                <div class="detail-content">
-                                    <span>Based In</span>
-                                    <strong>Santa Rosa, Laguna</strong>
+                                    <div class="detail-content mb-3">
+                                        <i class="bi bi-geo-alt text-primary"></i>
+                                        <span>Based In</span>
+                                        <strong  >Santa Rosa, Laguna</strong>
+                                    </div>
                                 </div>
-                            </div>
 
-                            <div class="detail-item">
-                                <i class="bi bi-envelope text-primary"></i>
-                                <div class="detail-content">
-                                    <span>Email</span>
-                                    <strong>ghibs.raquel@gmail.com</strong>
-                                </div>
-                            </div>
+                                <div class="col-lg-6 item">
+                                        <div class="detail-content mb-3">
+                                            <i class="col-sm-2 bi bi-envelope text-primary"></i>
+                                            <span>Email</span>
+                                            <strong  >ghibs.raquel@gmail.com</strong>
+                                        </div>
 
-                            <div class="detail-item">
-                                <i class="bi bi-phone text-primary"></i>
-                                <div class="detail-content">
-                                    <span>Phone</span>
-                                    <strong>+(63)-997-258-0093</strong>
-                                </div>
-                            </div>
 
-                            <div class="detail-item">
-                                <i class="bi bi-calendar-check text-primary"></i>
-                                <div class="detail-content">
-                                    <span>Availability</span>
-                                    <strong>Open to Work</strong>
+                                        <div class="detail-content mb-3">
+                                            <i class="col-sm-2 bi bi-phone text-primary"></i>
+                                            <span style="color:lightgray;">Phone</span>
+                                            <strong>+(63)-997-258-0093</strong>
+                                        </div>
+
+                                        <div class="detail-content mb-3">
+                                            <i class="bi bi-calendar-check text-primary"></i>
+                                            <span>Availability</span>
+                                            <strong  >Open to Work</strong>
+                                        </div>
                                 </div>
                             </div>
-                        </div>
+                        </div
 
                         <div class="skills-showcase">
                             <div class="section-tag">Core Skills</div>
@@ -214,7 +218,7 @@
 
     <section id="projects" class="proj py-5">
         <div class="container reveal">
-            <h2 class="fw-bold mb-4 border-bottom pb-2">Projects</h2>
+            <h2 class="fw-bold mb-4 border-bottom pb-2 mt-4">Projects</h2>
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="card project-card h-100 border-0 shadow-sm">
@@ -222,7 +226,9 @@
                             <img src="pricepective.png" class="img-fluid" />
                             <h4 class="card-title text-primary">Pricepective</h4>
                             <p class="card-text text-muted">A data-driven web application focused on demand prediction and price optimization.</p>
-                            <a href="https://lagaymolinkngpdf.com" data-bs-toggle="tootltip" data-bs-placement="top" title="https://lagaymolinkngpdf.com"><i class="bi bi-filetype-pdf"></i> see project info</a>
+                            <button type="button" class="btn btn-outline-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#pricepectiveModal">
+                                <i class="bi bi-images"></i> See Project Gallery
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -232,8 +238,9 @@
                             <img src="pos.png" class="img-fluid" />
                             <h4 class="card-title text-primary">POS System</h4>
                             <p class="card-text text-muted">A point-of-sale system built to streamline transactions and manage inventory efficiently.</p>
-                            <a href="https://lagaymolinkngpdf.com" data-bs-toggle="tootltip" data-bs-placement="top" title="https://lagaymolinkngpdf.com"><i class="bi bi-filetype-pdf"></i> see project info</a>
-                        </div>
+                            <button type="button" class="btn btn-outline-primary btn-sm mt-2" data-bs-toggle="modal" data-bs-target="#posModal">
+                                <i class="bi bi-images"></i> See Project Gallery
+                            </button>                        </div>
                     </div>
                 </div>
             </div>
@@ -242,7 +249,7 @@
 
     <section id="skills" class="py-5">
         <div class="container reveal">
-            <h2 class="fw-bold mb-4 border-bottom pb-2">Technical Skills</h2>
+            <h2 class="fw-bold mb-4 border-bottom pb-2 mt-4">Technical Skills</h2>
             <div class="row g-4">
                 <div class="col-md-6">
                     <h5 class="text-secondary">Web Technologies</h5>
@@ -250,7 +257,7 @@
                     <span class="badge skill-badge bg-info text-dark">CSS (Intermediate)</span>
 
                     <h5 class="text-secondary mt-4">Programming Languages</h5>
-                    <span class="badge skill-badge bg-success">Java (Advanced)</span>
+                    <span class="badge skill-badge bg-primary">Java (Advanced)</span>
                     <span class="badge skill-badge bg-info text-dark">C (Intermediate)</span>
                     <span class="badge skill-badge bg-info text-dark">Python (Intermediate)</span>
                     <span class="badge skill-badge bg-info text-dark">JavaScript (Intermediate)</span>
@@ -296,7 +303,7 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="contactModalLabel">Send me a message!</h5>
+                    <h5 class="modal-title text-white" id="contactModalLabel">Send me a message!</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -320,6 +327,125 @@
                         </div>
                     </form>
 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal for pricepective project-->
+    <div class="modal fade" id="pricepectiveModal" tabindex="-1" aria-labelledby="pricepectiveModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header bg-light">
+                    <h5 class="modal-title fw-bold text-dark" id="pricepectiveModalLabel">Pricepective Gallery</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!--Carousell pics for Pricepective-->
+                <div class="modal-body p-0">
+                    <div id="pricepectiveCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#pricepectiveCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#pricepectiveCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="pricepective_1.jpg" class="d-block w-100" alt="Dashboard View">
+                                <div class="bg-light p-4 text-center border-top">
+                                    <p class="mb-0 text-dark"><strong style="color: black; ">Forecast Module:</strong> This is the Forecasting module, a core module that shows the demand prediction data of a selected category and time frame.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="pricepective_2.jpg" class="d-block w-100" alt="Data Analytics">
+                                <div class="bg-light p-4 text-center border-top">
+                                    <p class="mb-0 text-dark"><strong style="color: black; ">Past analysis result:</strong> This functionality is built so that users will have the chance to view the summarized results of their past sessions.</p>
+                                </div>
+                            </div>
+                            <!--
+                                    <div class="carousel-item">
+                                        <img src="pricepective_3.png" class="d-block w-100" alt="Settings">
+                                        <div class="bg-light p-4 text-center border-top">
+                                            <p class="mb-0 text-dark"><strong style="color: black; ">Dashboard:</strong> Administrative controls to adjust variables and thresholds.</p>
+                                        </div>
+                                    </div>
+                                -->
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#pricepectiveCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#pricepectiveCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="posModal" tabindex="-1" aria-labelledby="posModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header bg-light">
+                    <h5 class="modal-title fw-bold text-dark" id="posModalLabel">Point of Sales Gallery</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!--Carousell pics for POS-->
+                <div class="modal-body p-0">
+                    <div id="posCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#posCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#posCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#posCarousel"
+                                    data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="pos_1.png" class="d-block w-100" alt="Dashboard View">
+                                <div class="bg-light p-4 text-center border-top">
+                                    <p class="mb-0 text-dark"><strong style="color: black; ">Dashboard:</strong> This is initial landing page of this software. It allows the user to login/register, and input roles.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="pos.png" class="d-block w-100" alt="Data Analytics">
+                                <div class="bg-light p-4 text-center border-top">
+                                    <p class="mb-0 text-dark"><strong style="color: black; ">Dashboard:</strong> In this part, the system allows the user/admin to select from multiple products, generate receipt, and complete the order.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="pos_2.png" class="d-block w-100" alt="Settings">
+                                <div class="bg-light p-4 text-center border-top">
+                                    <p class="mb-0 text-dark"><strong style="color: black; ">Dashboard:</strong> This is accessible for both the user and admin and allows them to see the current stock levels. However, only the admin is allowed to manipulate the datas inside the table.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#posCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#posCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(100%);"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
                 </div>
             </div>
         </div>
